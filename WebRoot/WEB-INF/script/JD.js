@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ¾©¶«ÇÀÈ¯
+// @name         äº¬ä¸œæŠ¢åˆ¸
 // @namespace    http://tampermonkey.net/
 // @version      0.0.2
 // @description  designed for getting 11.11 2000-1111 RMB
@@ -16,14 +16,14 @@ var count = 0;
 function control() {
 	if ((hours == 0 || hours == 24 || hours == 10 || hours == 15 || hours == 20)
 			&& minutes == 0 && seconds == 0) {
-		//Á¢¼´ÁìÈ¯µÄÔªËØ¶¨Î»¿ÉÄÜ»áÓĞ±ä¶¯£¬ËùÒÔÃ¿ÌìÁìÖ®Ç°×îºÃÏÈÔÚä¯ÀÀÆ÷È·ÈÏÒ»´ÎÔªËØÎ»ÖÃÊÊµ±×öµ÷Õû
+		//ç«‹å³é¢†åˆ¸çš„å…ƒç´ å®šä½å¯èƒ½ä¼šæœ‰å˜åŠ¨ï¼Œæ‰€ä»¥æ¯å¤©é¢†ä¹‹å‰æœ€å¥½å…ˆåœ¨æµè§ˆå™¨ç¡®è®¤ä¸€æ¬¡å…ƒç´ ä½ç½®é€‚å½“åšè°ƒæ•´
 		$(".hot_space:eq(0)").click();
-		// µã»÷ºóÊ¹¶¨Ê±º¯ÊıÊ§Ğ§£¬·ÀÖ¹¶à´Îµã»÷£¬
+		// ç‚¹å‡»åä½¿å®šæ—¶å‡½æ•°å¤±æ•ˆï¼Œé˜²æ­¢å¤šæ¬¡ç‚¹å‡»ï¼Œ
 		window.clearInterval(t1);
-		// Ë¢ĞÂÒ³ÃæÊ¹¶¨Ê±º¯ÊıÔÙ´ÎÉúĞ§
+		// åˆ·æ–°é¡µé¢ä½¿å®šæ—¶å‡½æ•°å†æ¬¡ç”Ÿæ•ˆ-
 		window.location.reload();
 	}// else
-	// console.log("µÚ"+(++count)+"´Î¼à¿Ø");
+	// console.log("ç¬¬"+(++count)+"æ¬¡ç›‘æ§");
 }
 function nowTime() {
 	hours = new Date().getHours();
