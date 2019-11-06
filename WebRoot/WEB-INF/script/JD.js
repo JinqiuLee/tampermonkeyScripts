@@ -20,7 +20,7 @@ function control() {
 		$(".hot_space:eq(0)").click();
 		// 点击后使定时函数失效，防止多次点击，
 		window.clearInterval(t1);
-		// 刷新页面使定时函数再次生效 
+		// 刷新页面使定时函数再次生效
 		window.location.reload();
 	}// else
 	// console.log("第"+(++count)+"次监控");
