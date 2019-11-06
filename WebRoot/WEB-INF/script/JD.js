@@ -16,6 +16,7 @@ var count = 0;
 function control() {
 	if ((hours == 0 || hours == 24 || hours == 10 || hours == 15 || hours == 20)
 			&& minutes == 0 && seconds == 0) {
+		//立即领券的元素定位可能会有变动，所以每天领之前最好先在浏览器确认一次元素位置适当做调整
 		$(".hot_space:eq(0)").click();
 		// 点击后使定时函数失效，防止多次点击，
 		window.clearInterval(t1);
